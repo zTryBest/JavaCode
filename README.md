@@ -1,3 +1,6 @@
 **各文件夹内容**
 
-​		记录Java学习的基础
+​		**Git回退版本：** git log
+​								git reset --head 版本号
+​								git push -f origin master
+

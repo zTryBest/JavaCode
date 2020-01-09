@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import static java.lang.StrictMath.sqrt;
+
 /**
  * @ClassName Lambda
  * @Description lambda基本用法
@@ -46,12 +48,7 @@ public class Lambda {
 
 
 
-    public static void main(String[] args) {
-        Lambda lambda = new Lambda();
-        lambda.SortJAVA8();
-        System.out.println(lambda.list);
 
-    }
 
 
 
