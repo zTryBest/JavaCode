@@ -11,6 +11,8 @@ import com.zzj.java8.FunctionalConvert;
  **/
 public class FunctionalTest {
     public static void main(String[] args) {
-        FunctionalConvert<String,Integer> functionalConvert=(String a)-> Integer.parseInt(a);
+        int num=1;
+        FunctionalConvert<Integer,String> functionalConvert=(String a)-> Integer.parseInt(a+num);
+
     }
 }

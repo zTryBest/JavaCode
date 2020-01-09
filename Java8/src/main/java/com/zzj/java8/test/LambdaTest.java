@@ -6,7 +6,6 @@ import com.zzj.java8.Lambda;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.lang.StrictMath.sqrt;
 
 /**
  * @ClassName LambdaTest
@@ -21,8 +20,6 @@ public class LambdaTest {
         Lambda lambda = new Lambda();
         lambda.SortJAVA8();
         System.out.println(list);
-        InterfaceDefault interfaceDefault= a -> {return sqrt(a);};
-        System.out.println(interfaceDefault.calculate(100));
 
 
     }

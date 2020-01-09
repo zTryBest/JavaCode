@@ -21,6 +21,17 @@ public class IntefaceDefaultTest  {
             }
         };
         System.out.println(interfaceDefault.calculate(100)+"===="+interfaceDefault.sqrt(16));
+
+        final  int  cc=1;
+
+//        InterfaceDefault interfaceDefault1=a -> sqrt(a);
+        InterfaceDefault interfaceDefault1=a -> (a+cc)*100;
+
+        int bb=1;
+        interfaceDefault1=a -> (a+bb)*100;
+      //  bb=3;
+
+
     }
 
 

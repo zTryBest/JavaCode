@@ -7,6 +7,7 @@ package com.zzj.java8;
  * @Date 2020/1/9
  * @Version v1.0
  **/
+@FunctionalInterface
 public interface InterfaceDefault {
     //抽象方法
     public double calculate(int a);

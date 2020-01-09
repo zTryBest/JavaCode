@@ -9,7 +9,7 @@ package com.zzj.java8;
  **/
 @FunctionalInterface  //如果定义了两个抽象方法，就会报错
 public interface FunctionalConvert<F,T> {
-    T convert(F from);
+    F convert(T from);
 
 //    int convert(String from);
 
