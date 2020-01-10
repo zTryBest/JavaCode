@@ -12,7 +12,7 @@ import com.zzj.java8.FunctionalConvert;
 public class FunctionalTest {
     public static void main(String[] args) {
         int num=1;
-        FunctionalConvert<Integer,String> functionalConvert=(String a)-> Integer.parseInt(a+num);
+        FunctionalConvert<Integer,String> functionalConvert=a-> Integer.parseInt(a+num);
 
     }
 }
