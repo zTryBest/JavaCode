@@ -8,4 +8,20 @@ package com.code.sta;
  * @Version v1.0
  **/
 public class StaticMethod {
+    private static int num;
+    private static StaticVar staticVar;
+
+    public StaticMethod(){
+        System.out.println("进行了实例化");
+    }
+
+    public static void test(){
+        System.out.println("Init=========");
+       System.out.println(StaticVar.num);;
+    }
+
+    public static void main(String[] args) {
+        StaticMethod staticMethod = new StaticMethod();
+        StaticMethod.test();
+    }
 }
