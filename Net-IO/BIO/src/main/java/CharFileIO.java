@@ -8,7 +8,7 @@ import java.io.IOException;
  * @Date 2020/1/13
  * @Version v1.0
  **/
-public class CharIO {
+public class CharFileIO {
     public void CharWrite(){
         try {
             FileWriter fileWriter = new FileWriter("b.txt");
@@ -21,6 +21,6 @@ public class CharIO {
     }
 
     public static void main(String[] args) {
-        new CharIO().CharWrite();
+        new CharFileIO().CharWrite();
     }
 }

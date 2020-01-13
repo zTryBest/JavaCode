@@ -7,7 +7,7 @@ import java.io.*;
  * @Date 2020/1/13
  * @Version v1.0
  **/
-public class ByteIO {
+public class ByteFileIO {
     /**
      * @MethodName: ByteWrite
      * @Description: 字节输出流
@@ -40,7 +40,7 @@ public class ByteIO {
 
 
     public static void main(String[] args) {
-        new ByteIO().ByteWrite();
+        new ByteFileIO().ByteWrite();
     }
 
 }
