@@ -1,5 +1,6 @@
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.Socket;
 
 /**
@@ -15,10 +16,10 @@ public class SocketClientIO {
         try {
             Socket socket = new Socket("127.0.0.1",9999);
             String str="asfasfdasdf";
-            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            byteArrayOutputStream.write(str.getBytes());
-            byteArrayOutputStream.flush();
-            byteArrayOutputStream.close();
+            OutputStream outputStream = socket.getOutputStream();
+            outputStream.write(str.getBytes());
+            outputStream.flush();
+            outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

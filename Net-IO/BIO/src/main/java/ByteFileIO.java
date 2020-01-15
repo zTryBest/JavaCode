@@ -37,6 +37,20 @@ public class ByteFileIO {
         }
     }
 
+    public void ByteRead(){
+        try {
+            FileInputStream fileInputStream = new FileInputStream("a.txt");
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream, 1);
+            bufferedInputStream.read();
+            bufferedInputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 
 /**
  * @ClassName CharIO
@@ -14,7 +15,10 @@ public class CharFileIO {
             FileWriter fileWriter = new FileWriter("b.txt");
             String str="牛逼啊 马飞，我是卢本伟";
             fileWriter.write(str);
+            HashMap<Object, Object> map = new HashMap<>();
+
             fileWriter.flush();
+            fileWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
