@@ -17,13 +17,7 @@ import java.util.concurrent.FutureTask;
 @Slf4j(topic = "c.sync")
 public class Sync {
     public static void main(String[] args)  {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                log.info("running");
-            }
-        };
-        new Thread(runnable, "t2").start();
+        new Thread(()->log.info("running"), "t2").start();
         Thread t=new Thread("t1"){
             @Override
             public void run() {
